@@ -10,9 +10,9 @@ import {
 import { Console } from "console";
 import { createContext } from "vm";
 import jwt from "jsonwebtoken";
-import { prismaClient } from "../extras/prisma.js";
-import { Private_Secret_Key } from "../../environment.js";
-import { authenticationRoutes } from "./authentication-routes.js";
+import { prismaClient } from "../../extras/prisma";
+import { Private_Secret_Key } from "../../environment";
+import { authenticationRoutes } from "./authentication-routes";
 
 export const allRoutes = new Hono();
 
