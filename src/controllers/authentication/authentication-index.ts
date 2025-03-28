@@ -8,7 +8,7 @@ import {
 } from "./auntentication-types.js";
 import { prismaClient } from "../../extras/prisma.js";
 import jwt from "jsonwebtoken";
-import { Private_Secret_Key } from "../../../environment.js";
+import { Private_Secret_Key } from "../../environment.js";
 
 const createJWToken = (p: { id: string; username: string }): string => {
   const jwtPayload: jwt.JwtPayload = {
